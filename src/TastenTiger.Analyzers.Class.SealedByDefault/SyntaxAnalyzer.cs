@@ -5,10 +5,6 @@ using Microsoft.CodeAnalysis.Diagnostics;
 
 namespace TastenTiger.Analyzers.Class.SealedByDefault;
 
-/// <summary>
-///     A sample analyzer that reports the company name being used in class declarations.
-///     Traverses through the Syntax Tree and checks the name (identifier) of each class node.
-/// </summary>
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public class SyntaxAnalyzer : DiagnosticAnalyzer
 {
@@ -17,7 +13,7 @@ public class SyntaxAnalyzer : DiagnosticAnalyzer
     private static readonly DiagnosticDescriptor Rule = new(DiagnosticId,
         "Class should be sealed by default",
         "Class should be sealed since no other type inherits {0}", "Usage",
-        DiagnosticSeverity.Info, true, "");
+        DiagnosticSeverity.Info, true, "All non-inherited classes must be sealed.");
 
     public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } =
         ImmutableArray.Create(Rule);

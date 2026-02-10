@@ -1,7 +1,7 @@
 <Solution>
-    <Project
-            Path="src/TastenTiger.Analyzers.Class.SealedByDefault.Sample/TastenTiger.Analyzers.Class.SealedByDefault.Sample.csproj"/>
-    <Project
-            Path="src/TastenTiger.Analyzers.Class.SealedByDefault.Tests/TastenTiger.Analyzers.Class.SealedByDefault.Tests.csproj"/>
-    <Project Path="src/TastenTiger.Analyzers.Class.SealedByDefault/TastenTiger.Analyzers.Class.SealedByDefault.csproj"/>
+    <Project Path="src/TastenTiger.Analyzers.Class.SealedByDefault.CodeFix/TastenTiger.Analyzers.Class.SealedByDefault.CodeFix.csproj" />
+    <Project Path="src/TastenTiger.Analyzers.Class.SealedByDefault.Nuget/TastenTiger.Analyzers.Class.SealedByDefault.Nuget.csproj" />
+    <Project Path="src/TastenTiger.Analyzers.Class.SealedByDefault.Sample/TastenTiger.Analyzers.Class.SealedByDefault.Sample.csproj" />
+    <Project Path="src/TastenTiger.Analyzers.Class.SealedByDefault.Tests/TastenTiger.Analyzers.Class.SealedByDefault.Tests.csproj" />
+    <Project Path="src/TastenTiger.Analyzers.Class.SealedByDefault/TastenTiger.Analyzers.Class.SealedByDefault.csproj" />
 </Solution>

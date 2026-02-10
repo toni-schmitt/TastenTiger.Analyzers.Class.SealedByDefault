@@ -3,9 +3,7 @@
 A Roslyn analyzer that ensures that classes and records which are not inherited anywhere are marked as `sealed`.
 This promotes clearer design intent, better performance, and safer code.
 
-<a href="https://codeberg.org/toni-schmitt/TastenTiger.Analyzers.Class.SealedByDefault">
-    <img alt="Get it on Codeberg" src="https://get-it-on.codeberg.org/get-it-on-blue-on-white.png" height="60">
-</a>
+[![Get it on Codeberg](https://codeberg.org/Codeberg/GetItOnCodeberg/raw/branch/main/get-it-on-blue-on-white.png)](https://codeberg.org/toni-schmitt/TastenTiger.Analyzers.Class.SealedByDefault)
 
 ## Why enforce sealed classes?
 
