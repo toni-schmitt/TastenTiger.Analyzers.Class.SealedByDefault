@@ -1,0 +1,26 @@
+<Project>
+
+    <PropertyGroup>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>false</IsTestProject>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Authors>Toni Schmitt</Authors>
+        <Description>A Roslyn analyzer that detects non inherited classes missing the selaed keyword, offering diagnostics and automated code fixes.</Description>
+        <Copyright>Copyright $(Authors)</Copyright>
+        <PackageProjectUrl>https://codeberg.org/toni-schmitt/TastenTiger.Analyzers.Class.SealedByDefault</PackageProjectUrl>
+        <PackageReadmeFile>README.MD</PackageReadmeFile>
+        <RepositoryUrl>https://codeberg.org/toni-schmitt/TastenTiger.Analyzers.Class.SealedByDefault</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>sealed class codefix analyzers roslyn roslyn-analyzer roslyn-codefix</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    </PropertyGroup>
+
+</Project>

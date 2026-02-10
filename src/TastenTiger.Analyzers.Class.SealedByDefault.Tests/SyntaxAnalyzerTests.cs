@@ -21,7 +21,7 @@ public class SyntaxAnalyzerTests
         var expected = Verifier.Diagnostic()
             .WithLocation(2, 14)
             .WithArguments("NonSealedClass");
-        await Verifier.VerifyAnalyzerAsync(violatingCode, expected).ConfigureAwait(false);
+        await Verifier.VerifyAnalyzerAsync(violatingCode, expected);
     }
 
     [Fact]
@@ -42,7 +42,7 @@ public class SyntaxAnalyzerTests
         var expected = Verifier.Diagnostic()
             .WithLocation(8, 14)
             .WithArguments("NonSealedEndInheritor");
-        await Verifier.VerifyAnalyzerAsync(violatingCode, expected).ConfigureAwait(false);
+        await Verifier.VerifyAnalyzerAsync(violatingCode, expected);
     }
 
     [Fact]
@@ -55,7 +55,7 @@ public class SyntaxAnalyzerTests
 
                                      """;
 
-        await Verifier.VerifyAnalyzerAsync(complyingCode).ConfigureAwait(false);
+        await Verifier.VerifyAnalyzerAsync(complyingCode);
     }
 
     [Fact]
@@ -72,6 +72,6 @@ public class SyntaxAnalyzerTests
         var expected = Verifier.Diagnostic()
             .WithLocation(3, 21)
             .WithArguments("NonSealedRecordClass");
-        await Verifier.VerifyAnalyzerAsync(violatingCode, expected).ConfigureAwait(false);
+        await Verifier.VerifyAnalyzerAsync(violatingCode, expected);
     }
 }

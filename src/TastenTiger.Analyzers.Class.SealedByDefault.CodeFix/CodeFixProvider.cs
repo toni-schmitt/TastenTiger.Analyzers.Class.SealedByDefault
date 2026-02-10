@@ -1,8 +1,5 @@
 using System.Collections.Immutable;
 using System.Composition;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CodeActions;
 using Microsoft.CodeAnalysis.CodeFixes;
@@ -10,14 +7,14 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Editing;
 
-namespace TastenTiger.Analyzers.Class.SealedByDefault;
+namespace TastenTiger.Analyzers.Class.SealedByDefault.CodeFix;
 
 [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(CodeFixProvider))]
 [Shared]
 public class CodeFixProvider : Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider
 {
     public sealed override ImmutableArray<string> FixableDiagnosticIds { get; } =
-        ImmutableArray.Create(SyntaxAnalyzer.DiagnosticId);
+        [SyntaxAnalyzer.DiagnosticId];
 
     public override FixAllProvider? GetFixAllProvider()
     {
